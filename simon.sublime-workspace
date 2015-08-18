@@ -1,0 +1,473 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "manage.py",
+			"settings":
+			{
+				"buffer_size": 248,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "isnta",
+		"selected_items":
+		[
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jason/public_html/archeologistRoot/manage.py",
+		"/Users/jason/public_html/archeologistRoot/wsgi/archeologist.wsgi",
+		"/Users/jason/public_html/activity/activity.sublime-project",
+		"/Users/jason/public_html/sails/myNewProject/config/env/production.js",
+		"/Users/jason/public_html/sails/myNewProject/views/homepage.ejs",
+		"/Users/jason/public_html/sails/myNewProject/config/local.js",
+		"/Users/jason/public_html/sails/myNewProject/api/models/Person.js",
+		"/Users/jason/public_html/sails/myNewProject/views/layout.ejs",
+		"/Users/jason/public_html/sails/myNewProject/api/controllers/CommentController.js",
+		"/Users/jason/public_html/sails/myNewProject/config/connections.js",
+		"/Users/jason/public_html/sails/myNewProject/config/routes.js",
+		"/Users/jason/public_html/sails/myNewProject/config/env/development.js",
+		"/Users/jason/public_html/sails/myNewProject/app.js",
+		"/Users/jason/public_html/sails/myNewProject/README.md",
+		"/Users/jason/public_html/sails/myNewProject/config/globals.js",
+		"/Users/jason/public_html/activity/project/jobs/views.py",
+		"/Users/jason/public_html/activity/project/jobs/models.py",
+		"/Users/jason/public_html/activity/templates/jobs/update_form.html",
+		"/Users/jason/Library/Containers/com.tencent.Foxmail/Data/Library/Foxmail/Profiles/z3007136@unsw.edu.au/Mail/17/24/7371393880180280888.attachment/publicJalapeno",
+		"/Users/jason/public_html/crowdstaff/project/users/features/social.feature",
+		"/Users/jason/public_html/crowdstaff/project/settings/dev_jason.py",
+		"/Users/jason/public_html/crowdstaff/project/users/pipeline.py",
+		"/Users/jason/public_html/crowdstaff/project/users/registration/views.py",
+		"/Users/jason/public_html/activity/project/settings/local.py",
+		"/Users/jason/public_html/activity/project/jobs/forms.py",
+		"/Users/jason/public_html/activity/project/income/urls.py",
+		"/Users/jason/public_html/activity/project/procurement/urls.py",
+		"/Users/jason/public_html/activity/templates/jobs/document_form.html",
+		"/Users/jason/public_html/activity/project/jobs/urls.py",
+		"/Users/jason/public_html/activity/transfer_docfile.py",
+		"/Users/jason/public_html/bodenroot/boden/binge/views.py",
+		"/Users/jason/public_html/bodenroot/boden/binge/models.py",
+		"/Users/jason/public_html/activity/static_local/javascript/SelectFilter2.js",
+		"/Users/jason/public_html/activity/static_local/stylesheets/admin/widget.css",
+		"/Users/jason/public_html/mysite/mysite/settings.py",
+		"/Users/jason/public_html/activity/templates/base.html",
+		"/Users/jason/public_html/mysite/templates/form.html",
+		"/Users/jason/public_html/mysite/multiple/admin.py",
+		"/Users/jason/public_html/mysite/mysite/urls.py",
+		"/Users/jason/public_html/mysite/multiple/models.py",
+		"/Users/jason/public_html/mysite/multiple/views.py",
+		"/Users/jason/Desktop/advertTutor/advertCrew.tex",
+		"/Users/jason/public_html/activity/project/procurement/admin.py",
+		"/Users/jason/public_html/activity/project/views.py",
+		"/Users/jason/public_html/mysite/assets/css/Style.css",
+		"/Users/jason/public_html/mysite/asset/js/jsi18n.js",
+		"/Users/jason/.virtualenvs/activity/lib/python2.7/site-packages/coverage/htmlfiles/style.css",
+		"/Users/jason/public_html/mysite/multiple/forms.py",
+		"/Users/jason/public_html/activity/project/jobs/constants.py",
+		"/Users/jason/public_html/activity/templates/jobs/job_detail.html",
+		"/Users/jason/public_html/activity/templates/jobs/job_list.html",
+		"/Users/jason/public_html/activity/project/procurement/views.py",
+		"/Users/jason/public_html/archeologistRoot/archives/views.py",
+		"/Volumes/USB DISK/iptables.rulesEM2",
+		"/Volumes/USB DISK/guacamole.iptables",
+		"/Volumes/USB DISK/chorizoiptables",
+		"/Volumes/USB DISK/iptables.rulesETH0.sh",
+		"/Users/jason/public_html/crowdstaff/project/settings/base.py",
+		"/Volumes/USB DISK/iptables.sh",
+		"/Users/jason/public_html/archeologistRoot/archeologist/settings/base.py",
+		"/Users/jason/public_html/archeologistRoot/assets/stylesheets/wip/survey.css",
+		"/Users/jason/public_html/archeologistRoot/templates/survey/index.html",
+		"/Users/jason/public_html/archeologistRoot/archeologist/settings/local.py",
+		"/Users/jason/public_html/activity/templates/procurement/expense_list.html",
+		"/Users/jason/public_html/activity/templates/procurement/money_flow.html",
+		"/Users/jason/public_html/activity/project/procurement/tests.py",
+		"/Users/jason/public_html/crowdstaff/project/jobs/process.py",
+		"/Users/jason/public_html/crowdstaff/project/jobs/models.py",
+		"/Users/jason/public_html/activity/project/jobs/tests.py",
+		"/Users/jason/public_html/activity/project/settings/base.py",
+		"/Users/jason/public_html/activity/static_local/stylesheets/admin_widget.css",
+		"/Users/jason/public_html/activity/static_local/javascript/jsi18n.js",
+		"/Users/jason/public_html/activity/project/jobs/admin.py",
+		"/Users/jason/public_html/activity/project/urls.py",
+		"/Users/jason/public_html/NOBACKUP",
+		"/Users/jason/public_html/Makefile",
+		"/Users/jason/public_html/archeologistRoot/survey_questionnaires.sql",
+		"/Users/jason/public_html/activity/wsgi/activity.wsgi",
+		"/Users/jason/public_html/built/besite/settings.py",
+		"/Users/jason/public_html/activity/project/settings/__init__.py",
+		"/Users/jason/public_html/archeologistRoot/archeologist/settings.py",
+		"/Users/jason/public_html/archeologistRoot/archives/admin.py",
+		"/Users/jason/public_html/activity/templates/procurement/purchase_list.html",
+		"/Users/jason/public_html/activity/templates/jobs/invoice_form.html",
+		"/Users/jason/public_html/activity/templates/jobs/invoice_list.html",
+		"/Users/jason/public_html/crowdstaff/project/workers/views/profile.py",
+		"/Users/jason/public_html/crowdstaff/project/users/models.py",
+		"/Users/jason/public_html/crowdstaff/project/jobs/const.py",
+		"/Users/jason/public_html/crowdstaff/project/settings/dev.py",
+		"/Users/jason/public_html/thirdauth2/thirdauth2/settings.py",
+		"/Users/jason/public_html/thirdauth2/thirdauth2/urls.py",
+		"/Users/jason/public_html/thirdauth2/thirdauth2/views.py",
+		"/Users/jason/public_html/activity/project/procurement/models.py",
+		"/Volumes/offline/Home/Documents/outsideWork/python/inb104/10/week10-questions/week10-solutions/print_cities.py",
+		"/Volumes/offline/Home/Documents/outsideWork/python/inb104/10/week10-questions/print_cities_q.py",
+		"/Volumes/offline/Home/Documents/outsideWork/python/inb104/11/Week-11-answers/blank_html.py",
+		"/Users/jason/public_html/activity/project/jobs/__init__.py",
+		"/Users/jason/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jason/Documents/outsidework/Vijay/built/paper2013/pubs.bib",
+		"/Users/jason/public_html/activity/requirements.txt"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"register",
+			"glob",
+			"Q\\(",
+			"Q(",
+			"inactive_dead",
+			"class todo",
+			"completed",
+			"def completed",
+			"abandoned",
+			"jobdetail",
+			"jobdetails",
+			"todoview",
+			"actioned_deadlines",
+			"active_deadlines",
+			"class todo",
+			"datetime.now",
+			"tz",
+			"timezone",
+			"rightnow",
+			"unactioned_deadlines",
+			"todo",
+			"jobdetail",
+			"todoview",
+			"AUTO_",
+			"only",
+			"read",
+			"readonly",
+			"auto_",
+			"strftime",
+			"class meta",
+			"class __meta",
+			"meta",
+			"max_",
+			"DateTime",
+			"auto=true",
+			"update_do",
+			"defaultRate",
+			"charge_Rate",
+			"def updateAdd",
+			"%here%",
+			"class job",
+			"class\\ ",
+			"job",
+			"tokenInvite",
+			"invites_already_seen_list",
+			"set_cookie",
+			"response",
+			"wip",
+			"@wip",
+			"email_to",
+			"with",
+			"docfile",
+			"theUpdate.documents.count",
+			"docfile",
+			"def updateMod",
+			"update_set",
+			"user",
+			"get_object_or_404",
+			"%here%",
+			"404",
+			"reverse\\(",
+			"%here%",
+			"\\*",
+			"*",
+			"attach_file",
+			"%here%",
+			"mySortFld",
+			"ajobdic",
+			"%here%",
+			"object_",
+			"object_to_dict",
+			"mySortFld",
+			"def jobList",
+			"EmailMessage",
+			"order",
+			"docfile",
+			"\\.add",
+			"../../img/",
+			"is_stacked",
+			"stacked",
+			"selector-add",
+			"selector-icons.gif",
+			"right",
+			"up",
+			"url\\(../",
+			"url(../",
+			"selectfilter",
+			"url\\(",
+			"url(",
+			"title_available",
+			"options",
+			"SelectBox",
+			"template",
+			"{{ADMIN_MEDIA_PREFIX}}",
+			"gif",
+			"u mobil",
+			"%here%",
+			"passed_deadlines",
+			"glob",
+			"myExpense",
+			"myTomorrow",
+			"import pdb",
+			"payThisDay\\(",
+			"businessTimeZone",
+			"thisUserB",
+			"addlink",
+			"button",
+			"filter",
+			"super",
+			"ADMIN_MEDIA_PREFIX",
+			"core.js",
+			"related_name",
+			"todos",
+			"todo_set",
+			"manytomany",
+			"Foreign",
+			"foriegnkey",
+			"foreignkey",
+			"%here%",
+			"def jobdetail",
+			"%here%",
+			"function updateQueryStringParameter",
+			"filter",
+			"%here",
+			"is_null",
+			"invoiceAdd",
+			"mobile",
+			"facebook"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"self.invites_already_seen_list",
+			"updates",
+			"../../images/admin/",
+			"my_is_stacked",
+			"url\\(../../",
+			"{% static=\"",
+			"myMoney",
+			"myMone",
+			"myYesterday",
+			"payThisDay\\(self.testBusiness, ",
+			"todos",
+			"\"\"",
+			"CENTS_PER_DOLLAR",
+			"\"comments\": \"\", ",
+			"\"address\": \"\", "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "manage.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 500.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "simon.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

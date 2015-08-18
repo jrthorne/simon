@@ -1,0 +1,4 @@
+**/.DS_Store
+*.pyc
+media/
+project/settings/local.py
