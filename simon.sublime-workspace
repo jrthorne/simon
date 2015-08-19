@@ -11,7 +11,31 @@
 			"file": "manage.py",
 			"settings":
 			{
-				"buffer_size": 248,
+				"buffer_size": 250,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "project/settings.py",
+			"settings":
+			{
+				"buffer_size": 2637,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "project/wsgi.py",
+			"settings":
+			{
+				"buffer_size": 389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "project/simon/models.py",
+			"settings":
+			{
+				"buffer_size": 698,
 				"line_ending": "Unix"
 			}
 		}
@@ -71,6 +95,12 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/jason/public_html/simon",
+		"/Users/jason/public_html/simon/project",
+		"/Users/jason/public_html/simon/project/simon"
+	],
 	"file_history":
 	[
 		"/Users/jason/public_html/archeologistRoot/manage.py",
@@ -176,7 +206,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -190,6 +220,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"WSGI",
+			"simon",
+			"project",
+			"simon",
 			"register",
 			"glob",
 			"Q\\(",
@@ -313,11 +347,7 @@
 			"%here%",
 			"function updateQueryStringParameter",
 			"filter",
-			"%here",
-			"is_null",
-			"invoiceAdd",
-			"mobile",
-			"facebook"
+			"%here"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -350,7 +380,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -359,15 +389,73 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 248,
+						"buffer_size": 250,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								131,
+								131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "project/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2100,
+								2100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 719.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "project/wsgi.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								339
 							]
 						],
 						"settings":
@@ -379,6 +467,34 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "project/simon/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 698,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								639,
+								639
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
