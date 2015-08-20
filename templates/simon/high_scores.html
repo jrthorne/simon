@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<html>
+<head>
+	 <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css" media="screen" />
+</head>
+
+<body>
+<div id="content">
+	<a id="col1"></a>
+	<a id="col2"></a>
+	<a id="col3"></a>
+	<a id="col4"></a>
+	<a id="col5"></a>
+</div>
+
+<h1>High Scores</h1>
+
+<ul>
+{% for player in object_list %}
+    <li>{{ player.user.first_name }} {{ player.user.last_name }} has high score {{ player.high_score }} and has played {{ player.games_played }} times.</li>
+{% empty %}
+    <li>No players have registered yet.</li>
+{% endfor %}
+</ul>
+</body>
+</html>

@@ -242,8 +242,8 @@ body .button {
 	background: #255CFF;
 	border: 5px solid #43A4FF;
 	display:block;
-	width: 150px;
-	padding: 75px 0;
+	width: 100px;
+	padding: 50px 0;
 	line-height:0;
 	color: #fff;
 	margin-left:auto;
@@ -258,7 +258,7 @@ body .button {
 	border-radius: 100px;
 	box-shadow: 0 0 5px #000;
 	text-shadow: -1px -1px 0 rgba(0,0,0,.5);
-	font-size: 1.5em;
+	font-size: 0.8em;
 }
 
 body .button:HOVER {

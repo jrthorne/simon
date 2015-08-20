@@ -12,8 +12,16 @@ from django.http import Http404
 # Create your models here.
 class Player(models.Model):
     # one to one with django user. You can select any user to be a player 
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(User, related_name='player')
     games_played = models.IntegerField(default=0)
     high_score = models.IntegerField(default=0)
+
+    class Meta:
+        ordering = ('high_score',)
+    # end Meta
+
+    def __str__(self):
+        return self.user.first_name
+    # end __str__
 # end Player
 
