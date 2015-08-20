@@ -126,15 +126,15 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static_local'),
 )
 
-# where do we go to login?
-#LOGIN_URL               = '/login'
-
 AUTHENTICATION_BACKENDS = (
    'social.backends.facebook.FacebookOAuth2',
    'social.backends.google.GoogleOAuth2',
    'social.backends.twitter.TwitterOAuth',
    'django.contrib.auth.backends.ModelBackend',
 )
+# where do we go to login?
+LOGIN_URL               = '/'
+# Where does social auth redirect us once logged in?
 LOGIN_REDIRECT_URL = '/'
 
 #  use gmail for sending emails

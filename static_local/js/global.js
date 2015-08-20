@@ -155,7 +155,7 @@ var loader = new widgets.Loader({ message: "Downloading: 0%" });
 		var simonSays = new Simon;
 		loader.stop();
 		simonSays.init();
-	}, "piano", "./inc/MIDI.js/"); // specifying a path doesn't work
-
+	}, "piano", "/static/js/MIDI.js/"); // specifying a path doesn't work
+//var imageFilesPath = "/static/images/datetimepicker/";
 
 })();

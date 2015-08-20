@@ -1,40 +1,76 @@
 {% extends 'base.html' %}
 
 {% block main %}
- <div>
+
+<!--div id="intro">
+		<h1>Simon Says</h1>
+		<p class="subnote">Inspired by <a href="http://www.youtube.com/watch?v=KVzZVYtt64I">Simon</a>&trade;</p>
+		<div class="bodyContent">
+			<p>I'll play a melody, and you play it back. Ready?</p>
+			
+			<a href="#" id="start" class="button">Start!</a>
+			
+		</div>
+		
+	</div>
+
+	<div id="content">
+		<a id="col1"></a>
+		<a id="col2"></a>
+		<a id="col3"></a>
+		<a id="col4"></a>
+		<a id="col5"></a>
+	</div>
+	<div id="endScreen">
+		<h2>GREAT WORK!</h2>
+		Final score: <span id="finalScore">0</span>
+		<a href="#" id="reset" class="button">Reset</a>
+		<a href="/" id="reset" class="button">Home</a>
+	</div>
+
+	<div id="ctrl">
+		<div class="topbar"></div>
+		<div id="score"><span class="title">Score:</span> <span id="scoreNumber">0</span></div>
+	</div-->
+ <div id="intro">
  <H1>
  {% if user and not user.is_anonymous %}
  	Welcome to Simon Says
  {% else %}
  	Simon Says - "Log In!"
- {% endif %}
+ {% endif %} 
  </H1>
 
 
- <p>
-   <ul>
    {% if user and not user.is_anonymous %}
-     <li>
-       <a>Hello {{ user.get_full_name|default:user.username }}!</a>
-     </li>
-     <li>
-       <a href="{% url 'auth:logout' %}?next={{ request.path }}">Logout</a>
-     </li>
-     <li>
-     <a href="{% url 'simon' %}">Play Simon</a>
-     </li>
+       <P class="subnmote">Hello {{ user.get_full_name|default:user.username }}!</P>
+     <div class="controls"></div>
+     <P>
+       <a href="{% url 'auth:logout' %}?next={{ request.path }}" id="start" class="button">Logout</a>
+     </P>
+     <P>
+     <a href="{% url 'simon' %}" id="start" class="button">Play Simon</a>
+     </P>
    {% else %}
-     <li>
-       <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with Facebook</a>
-     </li>
-     <li>
-       <a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}">Login with Google</a>
-     </li>
-     <li>
-       <a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}">Login with Twitter</a>
-     </li>
+   <div class="controls"></div>
+     <P>
+       <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}" id="start" class="button">Fbook</a>
+     </P>
+     <P>
+       <a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}" id="start" class="button">Google</a>
+     </P>
+     <P>
+       <a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}" id="start" class="button">Twitter</a>
+     </P>
    {% endif %}
-   </ul>
- </p>
+   </div>
  </div>
+
+ <div id="content">
+		<a id="col1"></a>
+		<a id="col2"></a>
+		<a id="col3"></a>
+		<a id="col4"></a>
+		<a id="col5"></a>
+	</div>
 {% endblock %}
