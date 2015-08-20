@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+
+{% if user and not user.is_anonymous %}
+{% block doctype %}{% endblock %}
+{% endif %}
+
 {% block main %}
+{% if user and not user.is_anonymous %}
  <div id="intro">
- <H1>
- {% if user and not user.is_anonymous %}
- 	Welcome to Simon Says
- {% else %}
- 	Simon Says - "Log In!"
- {% endif %} 
+ <H1 style="text-align:center; font-size: 4em;">
+ Welcome to Simon Says
  </H1>
+ {% else %}
+ <div>
+ <H1>Simon Says - "Log In!"</H1>
+ {% endif %}
 
 
    {% if user and not user.is_anonymous %}
@@ -31,7 +37,7 @@
      </div>
    {% endif %}
    </div>
- </div>
+ </div> <!-- end intro -->
 
     <div id="content">
 		<a id="col1"></a>
@@ -54,6 +60,7 @@
 		<div id="score"><span class="title">Score:</span> <span id="scoreNumber">0</span></div>
 	</div>
 
+{% if user and not user.is_anonymous %}
   <script type="text/javascript" src="{% static "js/Loader.js" %}"></script>
   <script type="text/javascript" src="{% static "js/Event.js" %}"></script>
   <script type="text/javascript" src="{% static "js/MIDI.js/js/DOMLoader.script.js" %}"></script>
@@ -67,4 +74,5 @@
   {% endautoescape %}
   <script src="{% static "js/MIDI.js/js/VersionControl.Base64.js" %}" type="text/javascript"></script>
   <script src="{% static "js/MIDI.js/js/lib/base64binary.js" %}" type="text/javascript"></script>
+{% endif %}
 {% endblock %}

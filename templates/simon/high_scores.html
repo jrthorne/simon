@@ -14,8 +14,11 @@
 	<a id="col5"></a>
 </div>
 
-<h1>High Scores</h1>
 
+
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;High Scores</h1>
+
+<div class="bodyContent">
 <ul>
 {% for player in object_list %}
     <li>{{ player.user.first_name }} {{ player.user.last_name }} has high score {{ player.high_score }} and has played {{ player.games_played }} times.</li>
@@ -23,7 +26,8 @@
     <li>No players have registered yet.</li>
 {% endfor %}
 </ul>
-<div class="bodyContent">
+<P>
 <a href="{% url 'home' %}" class="button">Home</a>
+</P>
 </div>
 {% endblock %}
