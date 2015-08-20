@@ -3,6 +3,7 @@ from django.template.context import RequestContext
 from django.contrib.auth.decorators import login_required
 from django.views.generic.list import ListView
 from django.views.decorators.csrf import ensure_csrf_cookie
+#from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from json import dumps
 from .serializers import PlayerSerializer
@@ -38,10 +39,11 @@ class PlayerDetail(generics.RetrieveUpdateDestroyAPIView):
 
     def post(self, context, **response_kwargs):
         myID = int(self.request.POST.get('id', None))
-        high_score = int(self.request.POST.get('id', None))
+        high_score = int(self.request.POST.get('high_score', None))
         thisPlayer = get_object_or_404(Player, pk=myID)
         # increment the number of games played
         thisPlayer.games_played += 1
+        import pdb; pdb.set_trace()
         if high_score > thisPlayer.high_score:
             thisPlayer.high_score = high_score
         # end if
