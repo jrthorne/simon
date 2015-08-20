@@ -43,7 +43,6 @@ class PlayerDetail(generics.RetrieveUpdateDestroyAPIView):
         thisPlayer = get_object_or_404(Player, pk=myID)
         # increment the number of games played
         thisPlayer.games_played += 1
-        import pdb; pdb.set_trace()
         if high_score > thisPlayer.high_score:
             thisPlayer.high_score = high_score
         # end if
