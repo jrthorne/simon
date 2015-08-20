@@ -5,7 +5,7 @@ from simon.models import Player
 class PlayerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Player
-        fields = ('id', 'score')
+        fields = ('id', 'high_score')
     # end Meta
 # end PlayerSerializer
 

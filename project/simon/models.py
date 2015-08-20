@@ -21,7 +21,8 @@ class Player(models.Model):
     # end Meta
 
     def __str__(self):
-        return self.user.first_name
+        return str(self.id) + ': ' + self.user.first_name + ': ' + \
+            self.user.social_auth.all()[0].provider
     # end __str__
 # end Player
 

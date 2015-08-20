@@ -118,6 +118,8 @@ var loader = new widgets.Loader({ message: "Downloading: 0%" });
  				i = 0;
  			document.getElementById('endScreen').className = 'active';
  			document.getElementById('finalScore').innerHTML = SCORE;
+ 			// JRT make the AJAX call to update the player
+ 			ajx_send(SCORE);
  			setTimeout(function() {
 	 			(function play() { // recursive loop to play fail music
 					setTimeout( function() {

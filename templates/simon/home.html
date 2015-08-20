@@ -57,6 +57,7 @@
 	</div>
 
 {% if user and not user.is_anonymous %}
+
   <script type="text/javascript" src="{% static "js/Loader.js" %}"></script>
   <script type="text/javascript" src="{% static "js/Event.js" %}"></script>
   <script type="text/javascript" src="{% static "js/MIDI.js/js/DOMLoader.script.js" %}"></script>
@@ -70,5 +71,28 @@
   {% endautoescape %}
   <script src="{% static "js/MIDI.js/js/VersionControl.Base64.js" %}" type="text/javascript"></script>
   <script src="{% static "js/MIDI.js/js/lib/base64binary.js" %}" type="text/javascript"></script>
+  <script src="{% static "js/jquery-1.8.2.min.js" %}"></script>  
+  
+ <script type="text/javascript">
+function ajx_send(score) {
+    var player_score = {
+        id: {{ request.user.player.id }},
+        high_score: score,
+        csrfmiddlewaretoken: '{{csrf_token}}',
+    };
+
+    $('#target').html('sending..');
+
+    $.ajax({
+        url: '{% url 'record_score' request.user.player.id %}',
+        type: 'POST',
+        dataType: 'json',
+        success: function (data) {
+            $('#target').html(data.msg);
+        },
+        data: player_score
+    });
+}
+</script>
 {% endif %}
 {% endblock %}

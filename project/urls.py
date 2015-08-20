@@ -6,6 +6,7 @@ urlpatterns = patterns('simon.views',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'home', name='home'),
     url(r'^scores/$', views.PlayerListView.as_view(), name='high_scores'),
+    url(r'^record/(?P<pk>\d+)/$', views.PlayerDetail.as_view(), name='record_score'),
     url('', include('social.apps.django_app.urls', namespace='social')),
     url('', include('django.contrib.auth.urls', namespace='auth')),
 )
