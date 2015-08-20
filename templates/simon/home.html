@@ -1,19 +1,15 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
-{% if user and not user.is_anonymous %}
-{% block doctype %}{% endblock %}
-{% endif %}
-
 {% block main %}
 {% if user and not user.is_anonymous %}
  <div id="intro">
- <H1 style="text-align:center; font-size: 4em;">
- Welcome to Simon Says
- </H1>
+ <H1>Welcome to Simon Says</H1>
  {% else %}
  <div>
- <H1>Simon Says - "Log In!"</H1>
+ <H1  style="text-align:center; font-size: 4em;">
+  Simon Says - "Log In!"
+ </H1>
  {% endif %}
 
 
