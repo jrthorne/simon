@@ -7,9 +7,14 @@ from simon.models import Player
 # Any social auth cretaed user should be a player
 def create_player(backend, details, response, user=None, *args, **kwargs):
     if user and user.pk:
-        # User exists, create player
-        newPlayer = Player(user=user)
-        newPlayer.save()
+        try:
+            oldPlayer = user.player
+        except Player.DoesNotExist:
+            # User exists, player does not. Create player
+            newPlayer = Player(user=user)
+            newPlayer.save()
+        # end try
+        
         return {
             'user': user,
             'is_new': False,

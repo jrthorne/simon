@@ -13,11 +13,12 @@
 
    {% if user and not user.is_anonymous %}
        <P class="subnmote">Hello {{ user.get_full_name|default:user.username }}!</P>
-       <div class="bodyContent">
+    <div class="bodyContent">
 			<p>I'll play a melody, and you play it back. Ready?</p>
 			<div class="controls"></div>
 			<a href="#" id="start" class="button">Start!</a>
 			<a href="{% url 'auth:logout' %}?next={{ request.path }}" class="button">Logout</a>
+      <a href="{% url 'high_scores' %}" class="button">Scores</a>
 		</div>
    {% else %}
      <div class="bodyContent">
@@ -25,6 +26,7 @@
        <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}" class="button">Fbook</a>
        <a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}" class="button">Google</a>
        <a href="{% url 'social:begin' 'twitter' %}?next={{ request.path }}" class="button">Twitter</a>
+       <a href="{% url 'high_scores' %}" class="button">Scores</a>
      </P>
      </div>
    {% endif %}
@@ -42,7 +44,8 @@
 	<div id="endScreen">
 		<h2>GREAT WORK!</h2>
 		Final score: <span id="finalScore">0</span>
-		<a href="#" id="reset" class="button">Reset</a>
+		<a href="#" id="reset" class="button">Play</a>
+    <a href="{% url 'high_scores' %}" class="button">Scores</a>
 		<a href="{% url 'auth:logout' %}?next={{ request.path }}" class="button">Logout</a>
 	</div>
 

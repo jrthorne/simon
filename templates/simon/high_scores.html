@@ -1,8 +1,9 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
-<html>
-<head>
-	 <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css" media="screen" />
-</head>
+
+{% block doctype %}{% endblock %}
+
+{% block main %}
 
 <body>
 <div id="content">
@@ -22,5 +23,7 @@
     <li>No players have registered yet.</li>
 {% endfor %}
 </ul>
-</body>
-</html>
+<div class="bodyContent">
+<a href="{% url 'home' %}" class="button">Home</a>
+</div>
+{% endblock %}
