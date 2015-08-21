@@ -21,7 +21,7 @@
 <div class="bodyContent">
 <ul>
 {% for player in object_list %}
-    <li style="padding:0.25em; text-align:center; font-size: 1.2em;">{{ player.user.first_name }} {{ player.user.last_name }} has has played {{ player.games_played }} times and a high score == {{ player.high_score }}</li>
+    <li style="padding:0.25em; text-align:center; font-size: 1.2em;">{{ player.user.first_name }} {{ player.user.last_name }} has has played {{ player.games_played }} time{{ player.games_played|pluralize }} and a high score == {{ player.high_score }}</li>
 {% empty %}
     <li style="text-align:center; font-size: 1.5em;">No players have registered yet.</li>
 {% endfor %}
