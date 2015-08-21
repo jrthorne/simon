@@ -17,7 +17,7 @@ class Player(models.Model):
     high_score = models.IntegerField(default=0)
 
     class Meta:
-        ordering = ('high_score',)
+        ordering = ('-high_score',)
     # end Meta
 
     def __str__(self):
